@@ -25,9 +25,9 @@ $ ->
           postDateNow = new Date(Date.now())
           postDateInDays = Math.floor((postDateNow - new Date(postDate)) / 86400000)
 
-          if postDateInDays is 0 then postDateInDays = 'today'
-          else if postDateInDays is 1 then postDateInDays = "yesterday"
-          else postDateInDays = "#{postDateInDays} days ago"
+          if postDateInDays is 0 then postDateInDays = 'hoje'
+          else if postDateInDays is 1 then postDateInDays = "ontem"
+          else postDateInDays = "#{postDateInDays} dias atrás"
 
           $(this).html(postDateInDays)
           $(this).mouseover -> $(this).html(postDate)
