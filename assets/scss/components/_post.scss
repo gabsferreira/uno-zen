@@ -97,6 +97,8 @@ section.post {
       vertical-align: middle;
       border: none;
       box-shadow: none;
+      max-width: 800px;
+      display: block;
     }
   }
   &.comments {
